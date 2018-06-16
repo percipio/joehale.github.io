@@ -22,11 +22,7 @@
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
                         {% for widget in site.widgets %}
                         <li class="nav-item"> 
-                            {% if widget.archor %} 
-                                <a class="scrollto" href="#{{ widget.url }}"> 
-                            {% else %}
-                                <a href="{{ widget.url | absolute_url }}">
-                            {% endif %} 
+                            <a href="{{ widget.url }}">
                             {{ widget.title }}</a></li>
                         {% endfor %}
                     </ul><!--//nav-->
