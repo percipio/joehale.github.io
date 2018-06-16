@@ -1,25 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-06-13 16:35:15 -0700
-categories: jekyll update
+title:  "My New Website is Nearly Done!"
+date:   2018-05-13 16:35:15 -0700
+categories: 
+published: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Welcome to my new website. I'm excited to have finally had some time to sit down and code a new site using [`Jekyll`](https://jekyllrb.com/). I've been programming in Ruby on Rails for a while now and I really like this platform so far. I wanted to build something that was lightweight and didn't rely on a complex backend or database so `Jekyll` is perfect for my needs right now. I've been pretty interested in putting together a new blogging platform but haven't really had the time.
 
-Jekyll also offers powerful support for code snippets:
+It's now nearly complete, I just need to import all blog posts, which could take a while since I'm going to write my own script in Python to do it - and I'm just learning the language.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Most of what I do, I do to learn, so I wanted to learn to program in Python so now I try to do most tasks in the language.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Good times, but it can take me longer because I also work full time and love hangin out with my family, cooking, and playing video games.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+So hang in there, more to come.

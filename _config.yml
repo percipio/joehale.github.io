@@ -13,22 +13,75 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Joe Hale
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Self taught developer. IT Project Manager. Studying Deep Learning and AI.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "localhost//4000" # the base hostname & protocol for your site, e.g. http://example.com
+show_excerpts: true
+
+# About/contact
+author: # you can edit these to be your personal details
+  name:   Joe Hale
+  url:    https://joehale.io
+  email:  me@joehale.io
+
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
+# Bing services
+bing_verification:
+
+# Social
+twitter_username: joehale
+github_username:  percipio
+linkedin_username: thejoehale
+
+# Custom vars
+version:             0.1.1
+github:
+  repo:              https://github.com/percipio/percipio.github.io
 
 # Build settings
 markdown: kramdown
-theme: minima
+highlighter: rouge
+
+permalink: pretty
 plugins:
   - jekyll-feed
+
+widgets:
+  - title: Blog
+    url: blog
+    archor: false
+  - title: Projects
+    url: projects
+    archor: false
+  - title: About
+    url: about
+    archor: false
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog"
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+    scope:
+      path: ""
+      type: "/"
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

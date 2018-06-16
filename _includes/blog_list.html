@@ -1,0 +1,30 @@
+ <!-- ******BLOG_LIST****** -->
+<section id="docs" class="docs section">
+    <div class="container">
+        <div class="docs-inner">
+            <h2 class="title text-center">Latest Posts</h2>
+            <div class="block">
+                <ul class="post-list">
+                    {% assign counter = '0' %}
+                    {%- for post in site.posts -%}
+                        {% if counter < '2' %}
+                            {% capture counter %}{{ counter | plus:'1' }}{% endcapture %}
+                            <li>
+                            <h3>
+                                <a class="post-link" href="{{ post.url | relative_url }}">
+                                {{ post.title | escape }}
+                                </a>
+                            </h3>
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            <span class="post-meta">{{ post.date | date: date_format }}</span>
+                            {%- if site.show_excerpts -%}
+                                {{ post.excerpt }}
+                            {%- endif -%}
+                            </li>
+                        {% endif %}
+                    {%- endfor -%}
+                </ul>
+            </div><!--//block-->
+        </div><!--//docs-inner-->         
+    </div><!--//container-->
+</section><!--//docs-->

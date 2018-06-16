@@ -1,3 +1,3 @@
-# JoeHale.io
+# Joe Hale
 
 ## My personal website

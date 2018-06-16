@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+
+{% include promo.html %}
+{% include skills.html %}
+{% include project_list.html %}
+
+{%- if site.posts.size > 0 -%}
+    {% include blog_list.html %}
+{% endif %}
+{% include contact.html %}
