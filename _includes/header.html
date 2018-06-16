@@ -3,7 +3,7 @@
         <div class="container">
             {% if page.title != "Home" %}
             <h1 class="logo pull-left">
-                <a href="{{ site.url | absolute_url }}">
+                <a href="{{ site.url }}">
                     <span class="logo-title">{{ site.title | escape }}</span>
                 </a>
             </h1><!--//logo-->
@@ -22,7 +22,7 @@
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
                         {% for widget in site.widgets %}
                         <li class="nav-item"> 
-                            <a href="{{ widget.url }}">
+                            <a href="{{}}{{ widget.url }}">
                             {{ widget.title }}</a></li>
                         {% endfor %}
                     </ul><!--//nav-->
